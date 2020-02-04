@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transition Animations Controller-->
+        <scene sceneID="ivh-FC-xB3">
+            <objects>
+                <viewController storyboardIdentifier="TransitionAnimationsController" id="smm-yG-OLo" customClass="TransitionAnimationsController" customModule="UIKitAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2IU-Bm-Vki">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="KfS-Og-yRg">
+                                <rect key="frame" x="72.5" y="313.5" width="269" height="269"/>
+                                <color key="backgroundColor" red="0.39436031770000002" green="0.80454147949999999" blue="0.84708121830000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KfS-Og-yRg" secondAttribute="height" multiplier="1:1" id="sWB-Cu-4WR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KfS-Og-yRg" firstAttribute="centerX" secondItem="2IU-Bm-Vki" secondAttribute="centerX" id="333-qL-wII"/>
+                            <constraint firstItem="KfS-Og-yRg" firstAttribute="centerY" secondItem="2IU-Bm-Vki" secondAttribute="centerY" id="O5I-dF-QaT"/>
+                            <constraint firstItem="KfS-Og-yRg" firstAttribute="height" secondItem="2IU-Bm-Vki" secondAttribute="height" multiplier="0.3" id="mOr-XH-VGi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mdS-mh-g4w"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="KfS-Og-yRg" id="TaW-bP-33T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xz-YG-xcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-536" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog" width="512" height="341"/>
+    </resources>
+</document>

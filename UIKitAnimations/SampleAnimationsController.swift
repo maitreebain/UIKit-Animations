@@ -24,7 +24,7 @@ class SampleAnimationsController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        //        pulsatingAnimation()
+                pulsatingAnimation()
     }
     
     override func viewWillAppear(_ animated: Bool) {

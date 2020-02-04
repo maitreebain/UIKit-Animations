@@ -31,11 +31,9 @@ class ConstraintsAnimationsController: UIViewController {
         }) { (done) in
             sender.transform = CGAffineTransform.identity
         }
-        print(box.frame.origin.y)
-        if box.frame.origin.y < 100 { return }
-        // TODO: Determind if view.frame.origin.y == 0 {return }
+        if box.frame.origin.y < UIScreen.main.bounds.origin.y { return }
         
-        viewYConstraint.constant -= 100
+        viewYConstraint.constant -= 100 // negative value to move up
         // when we change the constraints in iOS and we need this change to be animated we only need to animate we only need to animate self.view.layoutIfNeeded and the animation will take place
         
         //layoutIfNeeded will get called as the view is marked "dirty" by iOS, we implementing self.view.layoutIfNeeded in the animation block will cause the animation
